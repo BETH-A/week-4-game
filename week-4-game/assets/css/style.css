@@ -1,0 +1,9 @@
+body {
+    color: #eee;
+    background: url(../images/black-leather-upholstery.png) no-repeat center;
+    background-size: cover;
+}
+
+ul {
+    display: inline-block;
+}
