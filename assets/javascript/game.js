@@ -1,4 +1,4 @@
-
+$(document).ready(function() {
 //======================================
 // GLOBAL VARIABLES
 //======================================
@@ -61,4 +61,4 @@ consoleLogVariables();
     // Unlike the player's Attack Points, Counter Attack Power never changes
 
 
-
+});
