@@ -1,9 +1,6 @@
 body {
     color: #1a9;
-    background: url(../images/black-leather-upholstery.png) no-repeat center;
-    background-size: cover;
+    /* background: url(../images/black-leather-upholstery.png) no-repeat center;
+    background-size: cover; */
 }
 
-ul {
-    display: inline-block;
-}
