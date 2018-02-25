@@ -1,4 +1,4 @@
-$(document).ready(function () {
+// $(document).ready(function () {
     //======================================
     // GLOBAL VARIABLES
     //======================================
@@ -174,6 +174,6 @@ $(document).ready(function () {
         // end by  making sure game board is updated
 
     // listen for reset button click
-    }
+    };
 
-});
+// });
