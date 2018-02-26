@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewIronmanrt" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>RPG Game</title>
 
@@ -12,39 +13,206 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
-<!-- begin the bootstrap container -->
-
-<!-- Header introducing the game -->
-
-<!-- First row of tiles of available characters-->
-
-<!-- Second row of tiles of selected character -->
-
-    <h2>Character</h2>
-
-<!-- Third row of tiles for available enemies -->
-
-    <h2>Enemies Available to Attach:</h2>
+    <div class="container">
 
 
+        <!-- Header introducing the game -->
+        <div>
 
-    <button type="button" class="btn btn-danger">Attack</button>
+            <h1>Avengers RPG!</h1>
 
-  
-<!-- Fourth row of tiles for defender -->
+        </div>
+        <!-- First row of tiles of available characters-->
+        <div class="playerDiv gameCharacter" id="rowOneIronman" value="Ironman">
 
-    <h2>Defender</h2>
+            <p>Ironman</p>
 
-<!-- Now a div where game messages will go -->
+            <img src="assets/images/IronMan.png" alt="Ironman">
 
-<!-- Now the reset button -->
+            <p class="IronmanHealth">HEALTH</p>
+
+        </div>
+
+        <div class="playerDiv gameCharacter" id="rowOneCaptainAmerica" value="CaptainAmerica">
+
+            <p>CaptainAmerica</p>
+
+            <img src="assets/images/CaptainAmerica.jpg" alt="CaptainAmerica">
+
+            <p class="CaptainAmericaHealth">HEALTH</p>
+
+        </div>
+
+        <div class="playerDiv gameCharacter" id="rowOneBlackPanther" value="BlackPanther">
+
+            <p>BlackPanther</p>
+
+            <img src="assets/images/BlackPanther.jpg" alt="BlackPanther">
+
+            <p class="BlackPantherHealth">HEALTH</p>
+
+        </div>
+
+        <div class="playerDiv gameCharacter" id="rowOneThor" value="Thor">
+
+            <p>Thor</p>
+
+            <img src="assets/images/thor.png" alt="Thor">
+
+            <p class="ThorHealth">HEALTH</p>
+
+        </div>
+
+        <h2>Character</h2>
+
+        <!-- Second row of tiles of selected character -->
+        <div class="playerDiv gameCharacter" id="rowTwoIronman" value="Ironman">
+
+            <p>Ironman</p>
+
+            <img src="assets/images/Ironman.png" alt="Ironman">
+
+            <p class="IronmanHealth">HEALTH</p>
+
+        </div>
+
+        <div class="playerDiv gameCharacter" id="rowTwoCaptainAmerica" value="CaptainAmerica">
+
+            <p>CaptainAmerica</p>
+
+            <img src="assets/images/CaptainAmerica.jpg" alt="CaptainAmerica">
+
+            <p class="CaptainAmericaHealth">HEALTH</p>
+
+        </div>
+
+        <div class="playerDiv gameCharacter" id="rowTwoBlackPanther" value="BlackPanther">
+
+            <p>BlackPanther</p>
+
+            <img src="assets/images/BlackPanther.jpg" alt="BlackPanther">
+
+            <p class="BlackPantherHealth">HEALTH</p>
+
+        </div>
+
+        <div class="playerDiv gameCharacter" id="rowTwoThor" value="Thor">
+
+            <p>Thor</p>
+
+            <img src="assets/images/Thor.png" alt="Thor">
+
+            <p class="ThorHealth">HEALTH</p>
+
+        </div>
+
+        <h2>Enemies Available to Attach:</h2>
+
+        <!-- Third row of tiles for available enemies -->
+        <div class="enemyDiv gameCharacter" id="rowThreeIronman" value="Ironman">
+
+            <p>Ironman</p>
+
+            <img src="assets/images/Ironman.png" alt="Ironman">
+
+            <p class="IronmanHealth">HEALTH</p>
+
+        </div>
+
+        <div class="enemyDiv gameCharacter" id="rowThreeCaptainAmerica" value="CaptainAmerica">
+
+            <p>CaptainAmerica</p>
+
+            <img src="assets/images/CaptainAmerica.jpg" alt="CaptainAmerica">
+
+            <p class="CaptainAmericaHealth">HEALTH</p>
+
+        </div>
+
+        <div class="enemyDiv gameCharacter" id="rowThreeBlackPanther" value="BlackPanther">
+
+            <p>BlackPanther</p>
+
+            <img src="assets/images/BlackPanther.jpg" alt="BlackPanther">
+
+            <p class="BlackPantherHealth">HEALTH</p>
+
+        </div>
+
+        <div class="enemyDiv gameCharacter" id="rowThreeThor" value="Thor">
+
+            <p>Thor</p>
+
+            <img src="assets/images/Thor.png" alt="Thor">
+
+            <p class="ThorHealth">HEALTH</p>
+
+        </div>
+
+        <h2>Fight Section</h2>
+
+        <button type="button" class="btn btn-danger">Attack</button>
+
+        <h2>Defender</h2>
+
+
+        <!-- Fourth row of tiles for defender -->
+        <div class="defenderDiv gameCharacter" id="rowFourIronman" value="Ironman">
+
+            <p>Ironman</p>
+
+            <img src="assets/images/Ironman.png" alt="Ironman">
+
+            <p class="IronmanHealth">HEALTH</p>
+
+        </div>
+
+        <div class="defenderDiv gameCharacter" id="rowFourCaptainAmerica" value="CaptainAmerica">
+
+            <p>CaptainAmerica</p>
+
+            <img src="assets/images/CaptainAmerica.jpg" alt="CaptainAmerica">
+
+            <p class="CaptainAmericaHealth">HEALTH</p>
+
+        </div>
+
+        <div class="defenderDiv gameCharacter" id="rowFourBlackPanther" value="BlackPanther">
+
+            <p>BlackPanther</p>
+
+            <img src="assets/images/BlackPanther.jpg" alt="BlackPanther">
+
+            <p class="BlackPantherHealth">HEALTH</p>
+
+        </div>
+
+        <div class="defenderDiv gameCharacter" id="rowFourThor" value="Thor">
+
+            <p>Thor</p>
+
+            <img src="assets/images/Thor.png" alt="Thor">
+
+            <p class="ThorHealth">HEALTH</p>
+
+        </div>
 
 
 
-<!-- now end the container	 -->
+        <!-- Now a div where game messages will go -->
 
-        <script type="text/javascript" src="assets/javascript/game.js"></script>
-    </body>
+        <h4 id="gameMessages"></h4>
+
+        <!-- Now the reset button -->
+
+        <button type="button" class="btn btn-warning resetButton">RESET</button>
+
+        <!-- now end the container	 -->
+    </div>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
 </html>
