@@ -3,216 +3,110 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewIronmanrt" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>RPG Game</title>
 
-    <!-- reset.css not used as using bootstrap -->
-    <!-- <link rel="stylesheet" href="asset/css/reset.css"> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+    <!-- Bootstrap File -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
 </head>
 
 <body>
 
-    <div class="container">
+    <!-- Grid Container -->
+    <dir class="container">
 
-
-        <!-- Header introducing the game -->
-        <div>
-
-            <h1>Avengers RPG!</h1>
-
-        </div>
-        <!-- First row of tiles of available characters-->
-        <div class="playerDiv gameCharacter" id="rowOneIronman" value="Ironman">
-
-            <p>Ironman</p>
-
-            <img src="assets/images/IronMan.png" alt="Ironman">
-
-            <p class="IronmanHealth">HEALTH</p>
-
+        <!-- Header -->
+        <div class="page-header">
+            <h1>Avenger RPG</h1>
         </div>
 
-        <div class="playerDiv gameCharacter" id="rowOneCaptainAmerica" value="CaptainAmerica">
-
-            <p>CaptainAmerica</p>
-
-            <img src="assets/images/CaptainAmerica.jpg" alt="CaptainAmerica">
-
-            <p class="CaptainAmericaHealth">HEALTH</p>
-
+        <!-- Main Content -->
+        <div class="row main-content">
+            <div col-md-12>
+                <!-- Battlefield Panel -->
+                <div class="row battlefield">
+                    <div class="battlefieldPanel" id="battlefield">
+                        <!-- Attacker -->
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-body text-left attackerPanel" id="attacker">
+                                    <div class="card-header">
+                                        Attacker
+                                    </div>
+                                    <div class="attackerImage">
+                                    </div>
+                                    <div class="card-footer text-left">
+                                        Health:
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Playing Field -- >
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body text-center playingField" id="playingField">
+                                        <div class="playingFieldImage">
+                                        image
+                                        </div>
+                                        <div class="image">
+                                        </div>
+                                    </div>
+                                </div>
+                             </div>
+                            <!-- Defender -->
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-body text-right defenderPanel" id="defender">
+                                    <div class="card-header">
+                                        Defender:
+                                    </div>
+                                    <div class="attackerImage">
+                                    </div>
+                                    <div class="card-footer text-right">
+                                        Health:
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Opponents Panel -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        Awaiting Opponents
+                    </div>
+                    <div class="card-body">
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="playerDiv gameCharacter" id="rowOneBlackPanther" value="BlackPanther">
-
-            <p>BlackPanther</p>
-
-            <img src="assets/images/BlackPanther.jpg" alt="BlackPanther">
-
-            <p class="BlackPantherHealth">HEALTH</p>
-
-        </div>
-
-        <div class="playerDiv gameCharacter" id="rowOneThor" value="Thor">
-
-            <p>Thor</p>
-
-            <img src="assets/images/thor.png" alt="Thor">
-
-            <p class="ThorHealth">HEALTH</p>
-
-        </div>
-
-        <h2>Character</h2>
-
-        <!-- Second row of tiles of selected character -->
-        <div class="playerDiv gameCharacter" id="rowTwoIronman" value="Ironman">
-
-            <p>Ironman</p>
-
-            <img src="assets/images/Ironman.png" alt="Ironman">
-
-            <p class="IronmanHealth">HEALTH</p>
-
-        </div>
-
-        <div class="playerDiv gameCharacter" id="rowTwoCaptainAmerica" value="CaptainAmerica">
-
-            <p>CaptainAmerica</p>
-
-            <img src="assets/images/CaptainAmerica.jpg" alt="CaptainAmerica">
-
-            <p class="CaptainAmericaHealth">HEALTH</p>
-
-        </div>
-
-        <div class="playerDiv gameCharacter" id="rowTwoBlackPanther" value="BlackPanther">
-
-            <p>BlackPanther</p>
-
-            <img src="assets/images/BlackPanther.jpg" alt="BlackPanther">
-
-            <p class="BlackPantherHealth">HEALTH</p>
-
-        </div>
-
-        <div class="playerDiv gameCharacter" id="rowTwoThor" value="Thor">
-
-            <p>Thor</p>
-
-            <img src="assets/images/Thor.png" alt="Thor">
-
-            <p class="ThorHealth">HEALTH</p>
-
-        </div>
-
-        <h2>Enemies Available to Attach:</h2>
-
-        <!-- Third row of tiles for available enemies -->
-        <div class="enemyDiv gameCharacter" id="rowThreeIronman" value="Ironman">
-
-            <p>Ironman</p>
-
-            <img src="assets/images/Ironman.png" alt="Ironman">
-
-            <p class="IronmanHealth">HEALTH</p>
-
-        </div>
-
-        <div class="enemyDiv gameCharacter" id="rowThreeCaptainAmerica" value="CaptainAmerica">
-
-            <p>CaptainAmerica</p>
-
-            <img src="assets/images/CaptainAmerica.jpg" alt="CaptainAmerica">
-
-            <p class="CaptainAmericaHealth">HEALTH</p>
-
-        </div>
-
-        <div class="enemyDiv gameCharacter" id="rowThreeBlackPanther" value="BlackPanther">
-
-            <p>BlackPanther</p>
-
-            <img src="assets/images/BlackPanther.jpg" alt="BlackPanther">
-
-            <p class="BlackPantherHealth">HEALTH</p>
-
-        </div>
-
-        <div class="enemyDiv gameCharacter" id="rowThreeThor" value="Thor">
-
-            <p>Thor</p>
-
-            <img src="assets/images/Thor.png" alt="Thor">
-
-            <p class="ThorHealth">HEALTH</p>
-
-        </div>
-
-        <h2>Fight Section</h2>
-
-        <button type="button" class="btn btn-danger">Attack</button>
-
-        <h2>Defender</h2>
-
-
-        <!-- Fourth row of tiles for defender -->
-        <div class="defenderDiv gameCharacter" id="rowFourIronman" value="Ironman">
-
-            <p>Ironman</p>
-
-            <img src="assets/images/Ironman.png" alt="Ironman">
-
-            <p class="IronmanHealth">HEALTH</p>
-
-        </div>
-
-        <div class="defenderDiv gameCharacter" id="rowFourCaptainAmerica" value="CaptainAmerica">
-
-            <p>CaptainAmerica</p>
-
-            <img src="assets/images/CaptainAmerica.jpg" alt="CaptainAmerica">
-
-            <p class="CaptainAmericaHealth">HEALTH</p>
-
-        </div>
-
-        <div class="defenderDiv gameCharacter" id="rowFourBlackPanther" value="BlackPanther">
-
-            <p>BlackPanther</p>
-
-            <img src="assets/images/BlackPanther.jpg" alt="BlackPanther">
-
-            <p class="BlackPantherHealth">HEALTH</p>
-
-        </div>
-
-        <div class="defenderDiv gameCharacter" id="rowFourThor" value="Thor">
-
-            <p>Thor</p>
-
-            <img src="assets/images/Thor.png" alt="Thor">
-
-            <p class="ThorHealth">HEALTH</p>
-
-        </div>
-
-
-
-        <!-- Now a div where game messages will go -->
-
-        <h4 id="gameMessages"></h4>
-
-        <!-- Now the reset button -->
-
-        <button type="button" class="btn btn-warning resetButton">RESET</button>
-
-        <!-- now end the container	 -->
-    </div>
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p class="text-center">Copyright &copy; 2018</p>
+            </div>
+        </footer>
+    </dir>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+    <script src="assets/javascript/bootstrap.min.js"></script>
 </body>
 
 </html>
