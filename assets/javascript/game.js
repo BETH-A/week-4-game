@@ -9,9 +9,9 @@ $(document).ready(function() {
 	var numOpponents = 3;
 
 	// Create the game character objects and store in array
-	var player = [4];
+	var player = {
 
-	player[0] = {
+	"Ironman": {
 		name: "Ironman",
 		index: 0,
 		hp: 25,
@@ -19,9 +19,9 @@ $(document).ready(function() {
 		cap: 9,
 		type: "opponent",
 		pic: "assets/images/Ironman.png"
-	};
+	},
 
-	player[1] = {
+	"captainAmerica": {
 		name: "Captain America",
 		index: 1,
 		hp: 34,
@@ -29,9 +29,9 @@ $(document).ready(function() {
 		cap: 5,
 		type: "opponent",
 		pic: "assets/images/CaptainAmerica.jpg"
-	};
+	},
 
-	player[2] = {
+	"blackPanther": {
 		name: "Black Panther",
 		index: 2,
 		hp: 28,
@@ -39,9 +39,9 @@ $(document).ready(function() {
 		cap: 10,
 		type: "opponent",
 		pic: "assets/images/BlackPanther.jpg"
-	};
+	},
 
-	player[3] = {
+	"thor": {
 		name: "Thor",
 		index: 3,
 		hp: 30,
@@ -49,9 +49,11 @@ $(document).ready(function() {
 		cap: 12,
 		type: "opponent",
 		pic: "assets/images/Thor.png"
-	};
-
-	// Create variables to store calls to HTML elements
+    }
+}
+console.log(player)
+    // Create variables to store calls to HTML elements
+    
 
 	// Place opponents on opponent panel
 	printOpponents();
@@ -68,7 +70,8 @@ $(document).ready(function() {
 
 			// Add Attack button
 
-			// Update HTML
+            // Update HTML
+            
 
 			// Turn off onclick functionality
 
@@ -102,3 +105,4 @@ $(document).ready(function() {
 
 	// prints the opponent field
 });
+
