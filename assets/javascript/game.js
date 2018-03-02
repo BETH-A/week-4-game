@@ -9,9 +9,9 @@ $(document).ready(function() {
 	var numOpponents = 3;
 
 	// Create the game character objects and store in array
-	var player = {
+	var player = [
 
-	"Ironman": {
+	{
 		name: "Ironman",
 		index: 0,
 		hp: 25,
@@ -21,7 +21,7 @@ $(document).ready(function() {
 		pic: "assets/images/Ironman.png"
 	},
 
-	"captainAmerica": {
+	{
 		name: "Captain America",
 		index: 1,
 		hp: 34,
@@ -31,17 +31,17 @@ $(document).ready(function() {
 		pic: "assets/images/CaptainAmerica.jpg"
 	},
 
-	"blackPanther": {
+	{
 		name: "Black Panther",
 		index: 2,
 		hp: 28,
 		ap: 4,
 		cap: 10,
 		type: "opponent",
-		pic: "assets/images/BlackPanther.jpg"
+		pic: "assets/images/BlackPanther2.png"
 	},
 
-	"thor": {
+	{
 		name: "Thor",
 		index: 3,
 		hp: 30,
@@ -50,18 +50,38 @@ $(document).ready(function() {
 		type: "opponent",
 		pic: "assets/images/Thor.png"
     }
-}
+]
 console.log(player)
     // Create variables to store calls to HTML elements
-    
-
+    function printOpponents() {
+        for( var i = 0; i < player.length; i++) {     
+        var image = $("<img>");
+        image.attr("value", player[i].index);
+        image.addClass("imageClass");
+        image.attr("data-name", player[i].name);
+        image.attr("src", player[i].pic);
+        var playerName = $("<p>");
+        playerName.append(player[i].name)
+        var opponentsDiv = $("<div class='player'></div>");
+        opponentsDiv.append(image);
+        opponentsDiv.append(playerName);
+        $("#player-div").append(opponentsDiv);
+                        console.log(image)
+        }
+    }
 	// Place opponents on opponent panel
 	printOpponents();
-
+    
 
 	// On-click events \\
-
-	// Select Players
+    $(".player").on("click", ".imageClass", function() {
+        console.log("clicked");
+        console.log($(this).data("name"));
+        console.log($(this).attr("value"));
+        var playerIndex = $(this).attr("value");
+        console.log(playerIndex);
+    })
+    	// Select Players
 		// Do nothing if attacker and defender already chosen
 
         // Choose a defender

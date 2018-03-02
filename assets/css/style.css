@@ -1,0 +1,12 @@
+body {
+    background: url(../images/Avengers.png) no-repeat center;
+    background-size: cover;
+}
+
+#player-div {
+    width: 150px;
+    height: 200px;
+    min-width: 150px;
+    min-height: 200px;
+    margin-right: 10px; 
+}
