@@ -62,7 +62,7 @@ console.log(player)
         image.attr("src", player[i].pic);
         var playerName = $("<p>");
         playerName.append(player[i].name)
-        var opponentsDiv = $("<div class='player'></div>");
+        var opponentsDiv = $("<div class='player col-sm-3'></div>");
         opponentsDiv.append(image);
         opponentsDiv.append(playerName);
         $("#player-div").append(opponentsDiv);
